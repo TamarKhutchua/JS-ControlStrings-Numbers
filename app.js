@@ -26,27 +26,27 @@ console.log("Corrected: " + (81.66 * 100 * 15) / 100);
 console.log("\nFloat: " + Math.PI);
 console.log("Commuted: " + Math.round(Math.PI * 100) / 100);
 
-let i,
-  rand,
-  temp,
-  nums = [];
-let str = "\n\nYour Six Lucky Numbers: ";
-for (i = 1; i < 60; i++) {
-  nums[i] = i;
-}
-for (i = 1; i < 60; i++) {
-  rand = Math.ceil(Math.random() * 59);
-  temp = nums[i];
-  nums[i] = nums[rand];
-  nums[rand] = temp;
-}
-for (i = 1; i < 7; i++) {
-  str += nums[i];
-  if (i !== 6) {
-    str += " - ";
-  }
-}
-console.log(str);
+// let i,
+//   rand,
+//   temp,
+//   nums = [];
+// let str = "\n\nYour Six Lucky Numbers: ";
+// for (i = 1; i < 60; i++) {
+//   nums[i] = i;
+// }
+// for (i = 1; i < 60; i++) {
+//   rand = Math.ceil(Math.random() * 59);
+//   temp = nums[i];
+//   nums[i] = nums[rand];
+//   nums[rand] = temp;
+// }
+// for (i = 1; i < 7; i++) {
+//   str += nums[i];
+//   if (i !== 6) {
+//     str += " - ";
+//   }
+// }
+// console.log(str);
 
 let topic = "JavaScript";
 let series = "in easy steps";
@@ -58,3 +58,14 @@ console.log("Title: " + title);
 console.log("\n" + topic + " - Length: " + topic.length);
 console.log(series + " - Length: " + series.length);
 console.log(title + " - Length: " + title.length);
+
+let definition =
+  "JavaScript is the original dialect of  the ECMAScript standard language.";
+let str = definition.slice(0, 27);
+str += definition.slice(62, 70);
+console.log(str);
+console.log(str.split("", 4));
+str = definition.substring(42, 52);
+str += definition.substring(10, 17);
+str += definition.substr(52, 70);
+console.log(str);
