@@ -59,13 +59,28 @@ console.log("\n" + topic + " - Length: " + topic.length);
 console.log(series + " - Length: " + series.length);
 console.log(title + " - Length: " + title.length);
 
-let definition =
-  "JavaScript is the original dialect of  the ECMAScript standard language.";
-let str = definition.slice(0, 27);
-str += definition.slice(62, 70);
-console.log(str);
-console.log(str.split("", 4));
-str = definition.substring(42, 52);
-str += definition.substring(10, 17);
-str += definition.substr(52, 70);
-console.log(str);
+// let definition =
+//   "JavaScript is the original dialect of  the ECMAScript standard language.";
+// let str = definition.slice(0, 27);
+// str += definition.slice(62, 70);
+// console.log(str);
+// console.log(str.split("", 4));
+// str = definition.substring(42, 52);
+// str += definition.substring(10, 17);
+// str += definition.substr(52, 70);
+// console.log(str);
+
+let str = "JavaScript in easy steps";
+console.log("”Script” Search: " + str.search("Script"));
+console.log("”script” Search: " + str.search("script"));
+console.log("\n”Script” Match: " + str.match("Script"));
+console.log("”script” Match: " + str.match("script"));
+console.log("\nindexOf “s”: " + str.indexOf("s"));
+console.log("indexOf “m”: " + str.indexOf("m"));
+console.log("\nlastIndexOf “s”: " + str.lastIndexOf("s"));
+console.log("lastIndexOf “m”: " + str.lastIndexOf("m"));
+console.log("\ncharAt 0: " + str.charAt(0));
+console.log("charCodeAt 0: " + str.charCodeAt(0));
+console.log("fromCharCode: " + String.fromCharCode(74, 97, 118, 97));
+console.log("\nOriginal: " + str);
+console.log("Replaced: " + str.replace("easy", "simple"));
