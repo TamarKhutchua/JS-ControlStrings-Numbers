@@ -47,3 +47,14 @@ for (i = 1; i < 7; i++) {
   }
 }
 console.log(str);
+
+let topic = "JavaScript";
+let series = "in easy steps";
+let title = "";
+console.log(topic + " > " + topic.toLowerCase());
+console.log(series + " > " + series.toUpperCase());
+title = topic.concat("", series);
+console.log("Title: " + title);
+console.log("\n" + topic + " - Length: " + topic.length);
+console.log(series + " - Length: " + series.length);
+console.log(title + " - Length: " + title.length);
